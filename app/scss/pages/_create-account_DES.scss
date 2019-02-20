@@ -1,0 +1,147 @@
+
+/* ------     contentCreate-account     -------- */
+.contentCreate-account{
+	border-top: 1px solid #aaa;
+	
+	&__breadcrumb{
+		display: flex;
+		justify-content: space-between;
+		margin: 10px 0 20px 0;
+		&__left{
+			& ol li{
+				display: inline-block;
+				padding: 0 10px;
+			}
+			& ol li a{
+				color: #aaa;
+				font-size: 1.3rem;
+				font-family: arial;
+			}
+			& ol li::after{
+				content: "/";
+				padding-left: 15px;
+			}
+			& ol li:last-child::after{
+				content: "";
+			}
+		}
+		&__right{
+			& a{
+				color: #aaa;
+				font-size: 1.3rem;
+				font-family: arial;
+			}
+			& a::before{
+				content: "<";
+				padding-right: 10px;
+			}
+		}
+	}
+	&__create-account{
+		width: 80%;
+		margin: auto;
+		border: 1px solid #aaa;
+		height: auto;
+		margin-bottom: 100px;
+		& h1{
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 2.4rem;
+			padding: 15px 0;
+			border-bottom: 1px solid #aaa;
+			font-family: 'Playfair Display', serif;
+		}
+		& h1::after{
+			content: "*Required";
+			float: right;
+			font-size: 1.1rem;
+			font-family: 'Nunito', sans-serif;
+			padding-right: 10px;
+			padding-top: 11px;
+		}
+		& .FormCreate-account{
+			&__header{
+				display: flex;
+				padding-top: 40px;
+				text-transform: uppercase;
+				margin-bottom: 50px;
+				& div{
+					flex: 1;
+				}
+				& h2{
+					padding-bottom: 25px;
+					font-size: 1.3rem;
+					font-family: 'Nunito', sans-serif;
+				}
+				& .form-group{
+					margin-bottom: 20px;
+					& label{
+						font-size: 1.3rem;
+						font-family: 'Nunito', sans-serif;
+						font-weight: bold;
+					}
+					& input{
+						width: 100%;
+						height: 35px;
+						border: 1px solid #aaa;
+					}
+					& textarea{
+						width: 100%;
+						height: 75px;
+						border: 1px solid #aaa;
+					}
+					& select{
+						width: 100%;
+						height: 40px;
+						border: 1px solid #aaa;
+					}
+				}
+				& .form-group-checkbox{
+					font-size: 1.3rem;
+					& input{
+						margin-right: 5px;
+					}
+				}
+				&__personalinfo{
+					padding: 0 30px 0 20px;
+					& span{
+						display: none;
+					}
+				}
+				&__addressinfo{
+					padding: 0 30px 0 20px;
+					& .form-group-checkbox320{
+						display: none;
+					}
+				}
+			}
+
+			&__footer{
+				width: 30%;
+				margin: auto;
+				& input{
+					display: block;
+					width: 100%;
+					font-family: 'Nunito', sans-serif;
+					color: white;
+					font-size: 1.3rem;
+					background: black;
+					padding: 10px 0;
+					text-transform: uppercase;
+					margin-bottom: 20px;
+				}
+				& a{
+					display: block;
+					text-align: center;
+					text-decoration: black;
+					font-family: arial;
+					font-size: 1.4rem;
+					margin-bottom: 35px;
+					color: black;
+					text-decoration: underline;
+				}
+			}
+			
+		}
+	}
+}

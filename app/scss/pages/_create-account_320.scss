@@ -1,0 +1,56 @@
+
+/* ------   Create-Account-320    --------- */
+@media screen and (min-width: 320px ) and (max-width: 759px ){
+	.contentCreate-account{
+		padding: 0 10px;
+		&__breadcrumb{
+			display: none;
+		}
+		&__create-account{
+			width: 100%;
+			margin-top: 15px;
+			& h1::after{
+				content: "";
+			}
+			& .FormCreate-account{
+				&__header{
+					flex-direction: column;
+					padding-top: 10px;
+
+					&__personalinfo{
+						padding: 0 20px;
+						margin-bottom: 50px;
+						& h2{
+							clear: right;
+							padding-top: 20px;
+						}
+						& span{
+							display: block;
+							float: right;
+							font-size: 1.1rem;
+							font-family: 'Nunito', sans-serif;
+							
+						}
+					}
+					&__addressinfo{
+						padding: 0 20px;
+						& .form-group-checkbox320{
+							display: block;
+							font-size: 1.3rem;
+							& input{
+								margin-right: 5px;
+							}
+						}
+					}
+					& .form-group-checkbox{
+						display: none;
+					}
+				}
+				&__footer{
+					width: 260px;
+					margin: auto;
+				}
+			}
+		}
+	}
+}

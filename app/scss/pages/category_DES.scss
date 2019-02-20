@@ -1,0 +1,393 @@
+/* ----------    cart_DES      ------- */
+.PageCategory320{
+	display: none;
+}
+.PageCategory{
+	padding-bottom: 90px;
+	&__breadcrumb{
+		display: flex;
+		justify-content: space-between;
+		margin: 10px 0 20px 0;
+		&__left{
+			& ol li{
+				display: inline-block;
+				padding: 0 10px;
+			}
+			& ol li a{
+				color: #aaa;
+				font-size: 1.3rem;
+				font-family: arial;
+			}
+			& ol li::after{
+				content: "/";
+				padding-left: 15px;
+			}
+			& ol li:last-child::after{
+				content: "";
+			}
+		}
+		&__right{
+			& a{
+				color: #aaa;
+				font-size: 1.3rem;
+				font-family: arial;
+			}
+			& a::before{
+				content: "<";
+				padding-right: 10px;
+			}
+		}
+	}
+
+	&__contents{
+		display: flex;
+		& > div{
+			flex: 1;
+		}
+		& > div:nth-of-type(2){
+			flex: 4;
+		}
+		.Category-Sellection{
+			.ListWomen-title{
+				display: flex;
+				align-items: center;
+				& > div{
+					flex: 1;
+				}
+				& > div:nth-of-type(2){
+					display: flex;
+					justify-content: flex-end;	
+					a{
+						color: #847878;
+						font-size: 2rem;
+						font-family: 'Nunito', sans-serif;
+					}				
+				}
+			}
+			text-transform: uppercase;
+			font-family: 'Nunito', sans-serif;
+			font-weight: bold;
+			h1{
+				font-size: 1.4rem;
+			}
+
+			&__ListWomen{
+				margin-bottom: 25px;
+				border: 1px solid #aaa;
+				padding: 10px 15px 20px 15px;
+				
+				ul{
+					display: block;
+					padding-top: 25px;
+					padding-left: 10px;
+				}
+				ul li{
+					padding-bottom: 15px;
+				}
+				ul li:last-child{
+					padding-bottom: 0;
+				}
+				ul li a{
+					color: black;
+					font-size: 1.3rem;
+				}
+				ul li a:hover{
+					color: #aaa;
+				}
+			}
+			&__text{
+				color: #aaa;
+				font-size: 1.3rem;
+				margin-bottom: 10px;
+				padding-left: 5px;
+			}
+			&__Category{
+				margin-bottom: 25px;
+				border: 1px solid #aaa;
+				padding: 10px 15px 20px 15px;
+
+				ul{
+					display: block;
+					padding-top: 25px;
+					padding-left: 10px;
+				}
+				ul li{
+					padding-bottom: 15px;
+				}
+				ul li:last-child{
+					padding-bottom: 0;
+				}
+				ul li a{
+					color: black;
+					font-size: 1.3rem;
+				}
+				ul li a:hover{
+					color: #aaa;
+					
+				}
+			}
+			&__size{
+				margin-bottom: 25px;
+				border: 1px solid #aaa;
+				padding: 10px 15px 20px 15px;
+				font-size: 1.3rem;
+
+				.ListSize{
+					padding-top: 25px;
+					margin-left: 5px;
+					display: flex;
+					& > div{
+						flex: 1;
+					}
+					input{
+						margin-right: 8px;
+					}
+				}
+			}
+			&__range{
+				margin-bottom: 25px;
+				border: 1px solid #aaa;
+				padding: 10px 15px 20px 15px;
+				font-size: 1.3rem;
+				.Range-number{
+					display: flex;
+					align-content: space-between;
+					& > div{
+						flex: 1;
+					}
+					input{
+						border: 1px solid #aaa;
+						width: 50%;
+						padding: 8px 0;
+					}
+					& > div:nth-of-type(2){
+						display: flex;
+						justify-content: flex-end;
+					}
+				}
+			}
+			&__color{
+				margin-bottom: 25px;
+				border: 1px solid #aaa;
+				padding: 10px 15px 20px 15px;
+				font-size: 1.3rem;
+				.ListColor{
+					padding-top: 25px;
+					margin-left: 5px;
+					display: flex;
+					& > div{
+						flex: 1;
+					}
+					input{
+						margin-right: 3px;
+					}
+					a{
+						color: black;
+					}
+					a:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			&__brands{
+				margin-bottom: 25px;
+				border: 1px solid #aaa;
+				padding: 10px 15px 20px 15px;
+				font-size: 1.3rem;
+				.ListBrands{
+					padding-top: 25px;
+					margin-left: 5px;
+					display: flex;
+					& > div{
+						flex: 1;
+					}
+					input{
+						margin-right: 8px;
+					}
+					a{
+						color: black;
+					}
+					a:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			&__banner-small{
+				padding-top: 25px;
+				position: relative;
+				.banner-small-title{
+					height: 60px;
+					width: 60%;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					background: white;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					h3{
+						font-size: 14px;
+					}
+					span{
+						font-size: 11px;
+						color: #aaa;
+					}
+				}
+			}
+		}
+
+		.Category-Products{
+			padding-left: 30px;
+			.Big-Banner{
+				position: relative;
+				margin-bottom: 8px;
+				&__breadcrumb{
+					display: flex;
+					align-items: center;
+					margin-bottom: 20px;
+					& > div{
+						flex: 1;
+					}
+					& > div:nth-of-type(1), div:nth-of-type(3){
+						flex: 0.2;
+					}
+					& > div:nth-of-type(3){
+						display: flex;
+						justify-content: flex-end;
+					}
+					h1{
+						text-transform: uppercase;
+						font-family: 'Playfair Display', serif;
+						font-size: 14px;
+					}
+					span{
+						font-size: 10px;
+						font-family: arial;
+						color: #aaa;
+					}
+				}
+				img{
+					width: 100%;
+				}
+				&__text{
+					height: 90px;
+					width: 50%;
+					text-transform: uppercase;
+					position: absolute;
+					top: 45%;
+					left: 5%;
+					h1{
+						font-size: 48px;
+						font-family: 'Playfair Display', serif;
+					}
+					p{
+						font-size: 12px;
+						font-family: 'Nunito', sans-serif;
+					}
+				}
+			}
+			.Sort{
+				margin-bottom: 20px;
+				text-transform: uppercase;
+				display: flex;
+				font-family: 'Nunito', sans-serif;
+				align-items: center;
+				font-size: 10px;
+				& > div{
+					flex: 1;
+				}
+				& > div:nth-of-type(2){
+					flex: 1.3;
+					display: flex;
+				}
+				.PageCategory-Arrange{
+					display: flex;
+					& > div{
+						flex: 1;
+					}
+					& > div:nth-of-type(2){
+						flex: 0.7;
+						display: flex;
+					}
+					.sort-by{
+						display: flex;
+						align-items: center;
+						& > div{
+							margin-right: 5px;
+						}
+						select{
+							width: 105px;
+							height: 30px;
+							border: 1px solid #aaa;
+						}
+					}
+					.show{
+						display: flex;
+						align-items: center;
+						justify-content: flex-end;
+						& > div{
+							margin-left: 5px;
+						}
+						select{
+							width: 65px;
+							height: 30px;
+							border: 1px solid #aaa;
+						}
+					}
+				}
+
+				.PageCategory-Paginate{
+					display: flex;
+					justify-content: flex-end;
+					display: inline-block;
+					a {
+						margin: 0 5px;
+					  	color: black;
+					  	float: left;
+					  	padding: 8px 10px;
+				 	 	text-decoration: none;
+					  	transition: background-color .3s;
+					  	border: 1px solid #ddd;
+					}
+
+					a.active {
+					  background-color: #4CAF50;
+					  color: white;
+					  border: 1px solid #4CAF50;
+					}
+					a:hover:not(.active) {background-color: #ddd;}
+				}
+				
+			}
+			.Category-Product{
+				display: flex;
+				flex-wrap: wrap;
+				& > div{
+					flex: 1;
+					width: 31%;
+				}
+				&__item{
+					padding: 0 8px 70px 8px;
+					text-transform: uppercase;
+					text-align: center;
+					h2{
+						font-family: 'Playfair Display', serif;
+						font-size: 14px;
+						padding: 15px 0 5px 0;
+						a{
+							color: black;
+						}
+						a:hover{
+							color: #aaa;
+						}
+					}
+					span{
+						font-size: 12px;
+						font-family: 'Nunito', sans-serif;
+					}
+				}
+			}
+		}
+	}
+}

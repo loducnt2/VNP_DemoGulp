@@ -1,0 +1,239 @@
+
+/* ------  my-account-320  ---------- */
+@media screen and (min-width: 320px ) and (max-width: 759px ){
+	.contentMyAccount{
+		margin-bottom: 330px;
+		&__breadcrumb{
+			display: none;
+		}
+		&__MyAccount{
+			display: none;
+		}
+
+		&__MyAccount320{
+			display: block;
+			& h1{
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 2.4rem;
+				padding: 25px 0;
+				font-family: 'Playfair Display', serif;
+			}
+			& .MyAccount320{
+				&__title{
+					display: flex;
+					flex-direction: column;
+					text-transform: uppercase;
+					font-family: 'Nunito', sans-serif;
+					font-size: 1.7rem;
+					border: 1px solid #aaa;
+					& div{
+						flex: 1;
+						display: flex;
+						justify-content: center;
+						padding: 20px 0;
+						border-right: 1px solid #aaa;
+					}
+					& div:last-child{
+						border: 1px solid black;
+					}
+				}
+
+				&__content{
+					padding-top: 20px;
+					font-family: 'Nunito', sans-serif;
+
+					& .MyAccount320__content__title{
+						display: flex;
+						margin-bottom: 20px;
+						font-size: 1.2rem;
+						text-transform: uppercase;
+						padding-left: 10px;
+						& div{
+							flex: 1;
+						}
+						& div:nth-of-type(3){
+							flex: 0.7;
+						}
+						& div:nth-of-type(1){
+							flex: 1;
+							& span{
+								display: block;
+							}
+						}
+						& div:nth-of-type(4){
+							flex: 0.5;
+						}
+					}
+
+					& .MyAccount320__content__item{
+						display: flex;
+						margin-bottom: 20px;
+						font-size: 1.2rem;
+						text-transform: uppercase;
+						background: #f7f7f7;
+						padding: 10px 0;
+						padding-left: 10px;
+						& div{
+							flex: 1;
+						}
+						& div:nth-of-type(1){
+							flex: 1;
+							& span{
+								display: block;
+							}
+						}
+						& div:nth-of-type(3){
+							flex: 0.7;
+						}
+						& div:nth-of-type(4){
+							flex: 0.5;
+							& button{
+								width: 100%;
+								height: 100%;
+								background: black;
+								color: white;
+								text-transform: uppercase;
+								font-family: 'Nunito', sans-serif;
+								font-size: 1.2rem;
+							}
+						}
+					}
+
+					& .MyAccount320__content__action{
+						display: flex;
+						height: 35px;
+						background: #f7f7f7;
+						margin-bottom: 10px;
+						text-transform: uppercase;
+						padding-left: 10px;
+						& div{
+							flex: 1;
+							display: flex;
+							align-items: center;
+						}
+						& div:nth-of-type(1){
+							flex: 5.5;
+							font-size: 1.2rem;
+						}
+						& div:nth-of-type(2){
+							& button{
+								width: 100%;
+								height: 100%;
+								background: black;
+								color: white;
+								text-transform: uppercase;
+								font-family: 'Nunito', sans-serif;
+								font-size: 1.7rem;
+							}
+						}
+					}
+
+					& .MyAccount320__content__infoProduct{
+						margin-top: 25px;
+						font-family: 'Nunito', sans-serif;
+						padding: 0 5px;
+						&__title{
+							display: flex;
+							font-size: 1.2rem;
+							text-transform: uppercase;
+							& div{
+								flex: 1;
+								padding: 10px 0;
+							}
+							& div:nth-of-type(1){
+								flex: 4.5;
+								& span{
+									display: block;
+								}
+							}
+							& div:nth-of-type(2){
+								display: flex;
+								justify-content: flex-end;
+							}
+						}
+						
+						&__group{
+							padding: 0 5px;
+							border: 1px solid #aaa;
+							&__item{
+								display: flex;
+								font-size: 1.2rem;
+								text-transform: uppercase;
+								& div{
+									flex: 1;
+									padding: 10px 0;
+								}
+								& div:nth-of-type(1){
+									flex: 4.5;
+									& span{
+										display: block;
+									}
+								}
+								& div:nth-of-type(2){
+									display: flex;
+									justify-content: flex-end;
+								}
+							}
+							&__total{
+								display: flex;
+								font-size: 1.2rem;
+								text-transform: uppercase;
+								& div{
+									flex: 1;
+									padding: 10px 0;
+								}
+								& div:nth-of-type(2){
+									border-bottom: 1px solid #aaa;
+									& span{
+										display: block;
+									}
+								}
+								& div:nth-of-type(3){
+									border-bottom: 1px solid #aaa;
+									& span{
+										display: flex;
+										justify-content: flex-end;
+									}
+								}
+							}
+
+							&__totalDetails{
+								display: flex;
+								font-size: 1.2rem;
+								text-transform: uppercase;
+								& div{
+									flex: 1;
+									padding: 10px 0;
+								}
+								& div:nth-of-type(2){
+									& span{
+										display: block;
+									}
+								}
+								& div:nth-of-type(3){
+									& span{
+										display: flex;
+										justify-content: flex-end;
+									}
+								}
+							}
+						}
+
+						&__text{
+							margin-top: 20px;
+							margin-bottom: 50px;
+							& p{
+								font-size: 1.3rem;
+								padding-bottom: 15px;
+							}
+						}
+						
+					}
+
+
+				}
+			}
+		}
+	}
+}

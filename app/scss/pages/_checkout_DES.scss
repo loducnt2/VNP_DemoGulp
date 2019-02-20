@@ -1,0 +1,346 @@
+
+/* ------- Check out DES ------ */
+.contentCheckout{
+	border-top: 1px solid #aaa;
+	&__breadcrumb{
+		display: flex;
+		justify-content: space-between;
+		margin: 10px 0 20px 0;
+		&__left{
+			& ol li{
+				display: inline-block;
+				padding: 0 10px;
+			}
+			& ol li a{
+				color: #aaa;
+				font-size: 1.3rem;
+				font-family: arial;
+			}
+			& ol li::after{
+				content: "/";
+				padding-left: 15px;
+			}
+			& ol li:last-child::after{
+				content: "";
+			}
+		}
+		&__right{
+			& a{
+				color: #aaa;
+				font-size: 1.3rem;
+				font-family: arial;
+			}
+			& a::before{
+				content: "<";
+				padding-right: 10px;
+			}
+		}
+	}
+
+	&__Cart{
+		background: #f7f7f7;
+		padding: 10px 8px 35px 15px;
+		margin-bottom: 30px;
+		&__deleteAll{
+			display: flex;
+			justify-content: flex-end;
+			& button{
+				padding: 2px 8px;
+				color: black;
+				background: white;
+				font-size: 2rem;
+			}
+		}
+		& h1{
+			font-size: 2.8rem;
+			text-transform: uppercase;
+			font-family: 'Playfair Display', serif;
+			color: black;
+			padding-bottom: 30px;
+		}
+
+		&__products{
+			display: flex;
+			& div{
+				flex: 1;
+			}
+
+			& .cart-product{
+				display: flex;
+				text-transform: uppercase;
+				margin: 10px;
+				& div{
+					flex: 1;
+				}
+				& h3{
+					font-size: 1.8rem;
+					font-family: 'Playfair Display', serif;
+				}
+				& span{
+					display: block;
+					font-size: 1.6rem;
+					font-family: 'Nunito', sans-serif;
+					padding: 20px 0;
+				}
+				& button{
+				    padding: 7px 12px;
+					background: white;
+					color: black;
+					font-family: 'Nunito', sans-serif;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	&__Checkout{
+		display: flex;
+		& div{
+			flex: 1;
+		}
+		& div:nth-of-type(1){
+			flex: 2;
+		}
+
+		& .Checkout_patialCheckout{
+			margin-right: 8px;
+			border: 1px solid #aaa;
+			&--title{
+				text-transform: uppercase;
+				font-size: 2.4rem;
+				padding: 15px 0 15px 15px;
+				border-bottom: 1px solid #aaa;
+				font-family: 'Playfair Display', serif;
+			}
+			&--title::after{
+				content: "*Required";
+				float: right;
+				font-size: 1.1rem;
+				font-family: 'Nunito', sans-serif;
+				padding-right: 10px;
+				padding-top: 11px;
+			}
+
+			&__register{
+				margin: 40px 0 30px 0;
+				
+				& h2{
+					padding-bottom: 25px;
+					font-size: 1.7rem;
+					font-family: 'Nunito', sans-serif;
+					text-transform: uppercase;
+				}
+				& p{
+					padding-bottom: 25px;
+					font-size: 1.4rem;
+					color: black;
+				}
+				& .form-group{
+					margin-bottom: 20px;
+					text-transform: uppercase;
+					& label{
+						font-size: 1.3rem;
+						font-family: 'Nunito', sans-serif;
+						font-weight: bold;
+					}
+					& input{
+						width: 100%;
+						height: 35px;
+						border: 1px solid #aaa;
+					}
+					& textarea{
+						width: 100%;
+						height: 75px;
+						border: 1px solid #aaa;
+					}
+					& select{
+						width: 100%;
+						height: 40px;
+						border: 1px solid #aaa;
+					}
+				}
+				& .CheckoutFormCheckout{
+					display: flex;
+					margin-bottom: 30px;
+					& div{
+						flex: 1;
+					}
+					&__Customer{
+						padding: 0 30px 0 20px;
+						& .form-group-submit{
+							display: flex;
+							& div{
+								flex: 1;
+							}
+							& div:nth-of-type(2){
+								display: flex;
+								justify-content: flex-end;
+								align-items: center;
+							}
+							& input{
+								width: 100%;
+								padding: 10px 0;
+								background: black;
+								color: white;
+								text-transform: uppercase;
+							}
+							& a{
+								font-size: 1.4rem;
+								color: black;
+								text-decoration: underline;
+							}
+						}
+					}
+					&__NewCustomer{
+						padding: 0 30px 0 20px;
+						& .form-group-radio{
+							font-size: 1.2rem;
+							font-family: 'Nunito', sans-serif;
+							text-transform: uppercase;
+							& input{
+								margin-right: 5px;
+								margin-bottom: 15px;
+							}
+						}
+						& button{
+							margin-top: 20px;
+							width: 60%;
+							background: black;
+							color: white;
+							font-size: 1.2rem;
+							font-family: 'Nunito', sans-serif;
+							padding: 10px 0;
+							text-transform: uppercase;
+						}
+					}
+				}
+
+				& .CheckoutMore{
+					margin-bottom: 10px;
+					border: 1px solid #aaa;
+					background: #f7f7f7;
+					& h1{
+						text-transform: uppercase;
+						font-size: 2.3rem;
+					    padding: 15px 0 15px 15px;
+						font-family: 'Playfair Display', serif;
+						color: #aaa;
+					}
+				}
+
+				& .CheckoutMore320_bill{
+					display: none;
+				}
+				& .CheckoutMore760_bill{
+					display: none;
+				}
+				& .CheckoutMore320_ShippingInfo{
+					display: none;
+				}
+				& .CheckoutMore320_ShippingMethod{
+					display: none;
+				}
+				& .CheckoutMore320_payment{
+					display: none;
+				}
+				& .CheckoutMore320_OrderReview{
+					display: none;
+				}
+			}
+		}
+
+		& .Checkout_patialCard{
+			border: 1px solid #aaa;
+			
+			&__titleDES{
+				text-transform: uppercase;
+				font-size: 2.4rem;
+				padding: 15px 0 15px 15px;
+				border-bottom: 1px solid #aaa;
+				font-family: 'Playfair Display', serif;
+			}
+			&__title320{
+				display: none;
+			}
+			&__products{
+				padding: 20px 12px 25px 16px;
+				background: #f7f7f7;
+				margin-bottom: 10px;
+				&__delete{
+					display: flex;
+					justify-content: flex-end;
+					& a{
+						color: black;
+						font-size: 1.5rem;
+					}
+				}
+				&__product{
+					display: flex;
+					text-transform: uppercase;
+					color: black;
+					font-family: 'Nunito', sans-serif;
+					& div{
+						flex: 1;
+					}
+					& div:nth-of-type(2){
+						flex: 1.3;
+						& span{
+							display: block;
+							font-size: 1.2rem;
+							padding-bottom: 3px;
+						}	
+						& a{
+							display: block;
+							padding-top: 10px;
+							color: black;
+							text-decoration: underline;
+						}
+					}
+					& div:nth-of-type(3){
+						flex: 0.5;
+						
+					}
+					&__total{
+						position: relative;
+						& span{
+							display: block;
+							font-size: 1.2rem;
+							position: absolute;
+							bottom: 0;
+						}	
+					}
+				}
+			}
+
+			&__information{
+				display: flex;
+				margin-top: 15px;
+				text-transform: uppercase;
+				font-size: 1.2rem;
+				font-family: 'Nunito', sans-serif;
+				padding: 0 12px 0 16px;
+				& div{
+					flex: 1;
+				}
+				& span{
+					display: block;
+					padding-bottom: 5px;
+				}
+				& p{
+					padding-top: 15px;
+				}
+				&__price{
+					& span{
+						display: flex;
+						justify-content: flex-end;
+					}
+					& p{
+						display: flex;
+						justify-content: flex-end;
+					}
+				}
+			}
+			
+		}
+	}
+}

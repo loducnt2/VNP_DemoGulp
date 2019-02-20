@@ -1,0 +1,52 @@
+
+/* ------  Login-320  ---------- */
+@media screen and (min-width: 320px ) and (max-width: 759px ){
+	.contentLogin{
+		padding-bottom: 70px;
+		&__breadcrumb{
+			display: none;
+		}
+		&__Login{
+			margin-top: 15px;
+			& h1{
+				text-align: left;
+				padding-left: 20px;
+			}
+			& .FormLogin{
+				flex-direction: column-reverse;
+
+				&__customer{
+					padding-top: 25px;
+					& .form-group-submit{
+						display: flex;
+						& div{
+							flex: 1;
+						}
+						& div:nth-of-type(2){
+							flex: 1.6;
+							display: flex;
+							justify-content: flex-end;
+							align-items: center;
+						}
+						& input{
+							width: 100%;
+							padding: 10px 0;
+							background: black;
+							color: white;
+							text-transform: uppercase;
+						}
+						& a{
+							font-size: 1.4rem;
+							color: black;
+							text-decoration: underline;
+						}
+					}
+				}
+				&__NewCustomer{
+					padding-bottom: 35px;
+					border-bottom: 1px solid #aaa;
+				}
+			}
+		}
+	}
+}

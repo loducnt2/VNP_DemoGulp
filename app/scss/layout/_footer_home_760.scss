@@ -1,0 +1,138 @@
+@media screen and (min-width: 760px ) and (max-width: 1559px ){
+
+	.footerDES{
+		display: none;
+	}
+	footer{
+		display: block;
+		background: black;
+		height: auto;
+
+		.action{
+			padding: 15px 0;
+			height: 60px;
+		    align-items: center;
+    		display: flex;
+			border-bottom: 1px solid white;
+
+			& ul{
+				float: left;
+				list-style: none;
+				text-align: center;
+			}
+			& ul li{
+				display: inline-block;
+			  padding: 8px 0;
+			}
+			& ul li a{
+				display: block;
+				color: #aaa;
+				text-transform: uppercase;
+				border-right: 1px solid #aaa;
+				padding: 0 7px;
+			}
+			.except{
+				border-right: none !important;
+			}
+			& a:hover {
+			  color: #3885e5;
+			}
+		}
+
+		.newsletter{
+			padding: 15px 0;
+			border-bottom: 1px solid white;
+			display: flex;
+			justify-content: flex-end;
+
+			& div{
+				flex: 1;
+			}
+	
+			&__search{
+				display: flex;
+				align-items: center;
+
+				& div{
+					flex: 1;
+				}
+				& p{
+					color: white;
+					font-family: 'Playfair Display', serif;
+					text-transform: uppercase;
+					font-size: 12px;
+					text-align: center;
+				}
+
+				& div:nth-of-type(2){
+					flex: 2.5;
+				}
+				& input{
+					width: 100%;
+					height: 35px;
+					border-width: 0;
+				}
+			}
+
+			&__link{
+				& .linkHidden320{
+					display: none;
+				}
+				& .linkHidden720{
+					display: block;
+					float: right;
+
+					& ul{
+						display: inline-block;
+
+					}
+					& ul li{
+						display: inline-block;
+					}
+					& ul li a{
+						padding-left: 10px;
+					}
+					& ul li a:last-child{
+						padding-right: 10px;
+					}
+				}
+				
+			}
+		}
+
+		.method{
+			padding: 20px 10px;
+			display: flex;
+		    justify-content: space-between;
+			& ul{
+				float: left;
+				list-style: none;
+				text-align: center;
+			}
+			& ul li{
+				display: inline-block;
+				padding: 0 20px;
+			}
+			& ul li a{
+				display: block;
+				color: #aaa;
+			}
+
+			& p{
+				color: #aaa;
+				font-size: 10px;
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 10px;
+
+			}
+			.method_320{
+				display: none;
+			}
+			.method_760{
+				display: block;
+			}
+
+		}
+	}
+}

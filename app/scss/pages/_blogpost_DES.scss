@@ -1,0 +1,229 @@
+
+/* ----------- contentBlogPOST -------------------- */
+.contentBlog{
+
+	& .newsBlog{
+		&__left{
+			&__categoryBlogpost{
+				display: none;
+			}
+			& .newsBlogpostGallery{
+				padding-top: 20px;
+				padding-bottom: 70px;
+				& h2{
+					color: black;
+					font-size: 3.2rem;
+					font-family: 'Playfair Display', serif;
+					text-transform: uppercase;
+					padding-bottom: 25px;
+				}
+				& span{
+					color: black;
+					font-size: 1.4rem;
+					font-family: 'Nunito', sans-serif;
+					text-transform: uppercase;
+					display: block;
+				}
+				& p{
+					color: #aaa;
+					font-size: 1.8rem;
+					font-family: 'Nunito', sans-serif;
+					padding: 16px 0;
+				}
+				& img{
+					padding-top: 15px;
+				}
+				& .olderPost{
+					padding-top: 30px;
+					font-family: 'Nunito', sans-serif;
+					font-size: 1.6rem;
+					color: black;
+					text-transform: uppercase;
+					float: right;
+				}
+				& .olderPost::after{
+					content: ">";
+					padding-left: 10px;
+				}
+			}
+			&__info{
+				margin-bottom: 50px;
+				.link{
+					width: 50%;
+					display: flex;
+					& > div{
+						display: flex;
+						margin-right: 15px;
+						& > div{
+							margin-right: 7px;
+						}
+					}
+					&__number{
+						padding: 5px 10px;
+						border: 1px solid #aaa;
+						display: flex;
+						justify-content: center;
+						position: relative;
+					}
+					&__number:after{
+						content: "\f0c8";
+						color: white;
+				        transform: rotate(39deg);
+					    position: absolute;
+					    top: 3px;
+					    left: -5px;
+					    border-left: 1px solid #aaa;
+					    background-color: white;
+					    border-bottom: 1px solid #aaa;
+					}
+				}
+			}
+			&__reviews{
+				margin-bottom: 20px;
+				& h2{
+					text-transform: uppercase;
+					font-size: 3.2rem;
+					color: black;
+					font-family: 'Playfair Display', serif;
+					margin-bottom: 15px;
+				}
+				&__cmt{
+					background: #f7f7f7;
+					padding: 20px 25px;
+					margin: 10px 0;
+					& strong{
+						font-size: 1.5rem;
+					}
+					& p{
+						color: #aaa;
+						font-size: 1.6rem;
+						padding: 15px 0;
+					}
+					& span{
+						display: block;
+						color: #aaa;
+						font-size: 1.6rem;
+					}
+					& a{
+						padding-top: 15px;
+						color: black;
+						font-size: 1.4rem;
+						display: flex;
+						justify-content: flex-end;
+
+					}
+				}
+				&__cmtItem{
+					background: #f7f7f7;
+					padding: 20px 25px;
+					margin: 10px 0 10px 40px;
+					& strong{
+						font-size: 1.5rem;
+					}
+					& p{
+						color: #aaa;
+						font-size: 1.6rem;
+						padding: 15px 0;
+					}
+					& span{
+						display: block;
+						color: #aaa;
+						font-size: 1.6rem;
+					}
+					& a{
+						padding-top: 15px;
+						color: black;
+						font-size: 1.4rem;
+						display: flex;
+						justify-content: flex-end;
+
+					}
+				}
+				&__contact{
+					padding: 25px;
+					border: 1px solid #aaa;
+					text-transform: uppercase;
+					& h1{
+						font-size: 2.4rem;
+						font-family: 'Playfair Display', serif;
+						padding-bottom: 15px;
+					}
+					& .form-group{
+						margin-bottom: 20px;
+						& label{
+							font-size: 1.3rem;
+							font-family: 'Nunito', sans-serif;
+							font-weight: bold;
+						}
+						& input{
+							width: 100%;
+							height: 35px;
+							border: 1px solid #aaa;
+						}
+						& textarea{
+							width: 100%;
+							height: 75px;
+							border: 1px solid #aaa;
+						}
+					}
+					& .form-group-submit{
+						display: flex;
+						justify-content: flex-end;
+						& input{
+							padding: 10px;
+							background: black;
+							color: white;
+							text-transform: uppercase;
+						}
+					}
+				}
+			}
+		}
+
+		&__right{
+			padding-left: 40px;
+			padding-top: 20px;
+			text-transform: uppercase;
+			& h3{
+				color: black;
+				font-size: 1.8rem;
+				font-family: 'Nunito', sans-serif;
+				padding-bottom: 30px;
+			}
+			& .newsBlogCategory{
+				padding: 20px 0 25px 25px;
+				border: 1px solid #aaa;
+				margin-bottom: 20px;
+				& ul li{
+					padding-bottom: 23px;
+				}
+				& ul li a{
+					color: 1.4rem;
+					font-family: 'Nunito', sans-serif;
+					color: black;
+				}
+			}
+			& .newsBlogLable{
+				padding: 20px 25px 25px 25px;
+				border: 1px solid #aaa;
+				& p{
+					font-family: Tahoma;
+					font-size: 1.3rem;
+					color: black;
+					& .level1{
+						font-size: 3.2rem;
+						font-weight: 400;
+					}
+					& .level2{
+						font-size: 2.4rem;
+						font-weight: 400;
+					}
+					& .level3{
+						font-size: 1.8rem;
+					}
+				}
+
+			}
+		}
+	}
+}

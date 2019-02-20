@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wish list</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+	<div class="header">
+		<div class="main960">
+			<div class="navbar">
+				<div class="navbar__language">
+					<select class="navbar--des">
+						<option>company</option>
+					</select>
+					<select>
+						<option>usd</option>
+					</select>
+					<select>
+						<option>english</option>
+					</select>
+				</div>
+				<div class="navbar__cart">
+					<a href="cart.html">
+						<img src="images/TheShop_home_320_03.png">
+						<span>cart(0)</span>
+					</a>
+				</div>
+				<div class="navbar__freeship">
+					<p class="navbar--white">free shipping on orders above 50$</p>
+				</div>
+				<div class="navbar__actionDES">
+					<!-- <div style="padding-left: 0;">my account</div>
+					  	<div>wish list</div>
+					  	<div>check out</div>
+				  	<div style="border-right: none; padding-right: 0;">log in</div> -->
+				  	<ul>
+				  		<li><a href="my_account.html">my account</a></li>
+				  		<li><a href="wishlist.html">wish list</a></li>
+				  		<li><a href="checkout.html">check out</a></li>
+				  		<li><a href="login.html" class="actionDEShidden">log in</a></li>
+				  	</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="menuRES">
+		<div class="main960">
+			<div class="menuRES__header">
+				<div>
+					<h1><a href="index.html">the shop</a></h1>
+				</div>
+				<div class="menuRES__header__search">
+					<div>
+						<a href="#" class="fas fa-align-justify"></a>
+					</div>
+					<div>
+						<form>
+							<input type="text" name="" placeholder="search">
+						</form>
+					</div>
+					<div class="cart760">
+						<a href="cart.html">
+							<img src="images/cart_home_760_03.png">
+							<span>cart(0)</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="menuDES">
+		<div class="main960">
+			<div class="menuDES__content">
+				<div class="menuDES__header">
+					<h1><a href="index.html">the shop</a></h1>
+				</div>
+				<div class="menuDES__main">
+					<div class="menu__footer">
+						<ul>
+							<li><a href="category.html">women</a></li>
+							<li><a href="category.html">men</a></li>
+							<li><a href="category.html">kids</a></li>
+							<li><a href="#">accessories</a></li>
+							<li><a href="#">whats new</a></li>
+							<li><a href="#">brands</a></li>
+							<li><a href="category.html">sale</a></li>
+							<li><a href="blog.html" class="menu__footer__paddingNone">blog</a></li>
+						</ul>
+					</div>
+					<div></div>
+				</div>
+				<div class="menuDES__footer">
+					<div></div>
+					<div class="menuDES__search">
+						<div class="search--hidden">
+							<a href="#" class="fas fa-align-justify"></a>
+						</div>
+						<div class="searchDES">
+							<div class="searchDES__center">
+								<!-- <img src="images/search.png" alt="tìm kiếm"> -->
+								<i class="fas fa-search"></i>
+								<span style="padding-left: 10px;">search</span>
+							</div>
+						</div>
+						<div class="cartDES">
+							<a href="cart.html">
+								<img src="images/cart_home_760_03.png">
+								<span>cart(0)</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main960">
+		<div class="wrap">
+			<div class="contentWishlist">
+				<div class="contentWishlist__breadcrumb">
+					<div class="contentWishlist__breadcrumb__left">
+						<ol>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="cart.html">Cart</a></li>
+						</ol>
+					</div>
+					<div class="contentWishlist__breadcrumb__right">
+						<a href="#">Return to Previous Page</a>
+					</div>
+				</div>
+				<div class="contentWishlist__Wishlist">
+					<h1>wish list</h1>
+					<div class="Wishlist">
+						<div class="Wishlist__title">
+							<div class="Wishlist__title__left">
+								<div></div>
+								<div>product</div>
+								<div></div>
+								<div>price</div>
+								<div>q-ty</div>
+							</div>
+							<div></div>
+						</div>
+						<div class="Wishlist__product">
+							<div class="Wishlist__product__left">
+								<div class="Wishlist__product--delete">
+									<a href="#">X</a>
+								</div>
+								<div class="Wishlist__product--img">
+									<img src="images/wishlist/TheShop_wishlist_03.png" alt="">
+								</div>
+								<div class="Wishlist__product--info">
+									<p>detailed swing dress</p>
+									<p>color: blue</p>
+									<p>size: 12</p>
+									<a href="#">Edit item</a>
+								</div>
+								<div>$275.00</div>
+								<div>1</div>
+							</div>
+							<div class="Wishlist__product__right">
+								<button>
+									<a href="cart.html">add to bag</a>
+								</button>
+							</div>
+						</div>
+						<div class="Wishlist__product">
+							<div class="Wishlist__product__left">
+								<div class="Wishlist__product--delete">
+									<a href="#">X</a>
+								</div>
+								<div>
+									<img src="images/wishlist/TheShop_wishlist_06.png" alt="">
+								</div>
+								<div class="Wishlist__product--info">
+									<p>detailed swing dress</p>
+									<p>color: blue</p>
+									<p>size: 12</p>
+									<a href="#">Edit item</a>
+								</div>
+								<div>$275.00</div>
+								<div>2</div>
+							</div>
+							<div class="Wishlist__product__right">
+								<button>
+									<a href="cart.html">add to bag</a>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="contentWishlist__Wishlist320">
+					<h1>wish list</h1>
+					<div class="Wishlist320">
+						<div class="Wishlist320__product">
+							<div class="Wishlist320__product__left">
+								<div class="Wishlist320__product--delete">
+									<a href="#">X</a>
+								</div>
+								<div>
+									<img src="images/wishlist/TheShop_wishlist_03.png" alt="">
+								</div>
+								<div class="Wishlist320__product--info">
+									<p>detailed swing dress</p>
+									<p>color: blue</p>
+									<p>size: 12</p>
+									<p class="product-info-BigSpace">$275.00</p>
+									<p>1</p>
+									<a href="#">Edit item</a>
+								</div>
+							</div>
+							<div class="Wishlist320__product__right">
+								<button>
+									<a href="cart.html">add to bag</a>
+								</button>
+							</div>
+						</div>
+						<div class="Wishlist320__product">
+							<div class="Wishlist320__product__left">
+								<div class="Wishlist320__product--delete">
+									<a href="#">X</a>
+								</div>
+								<div>
+									<img src="images/wishlist/TheShop_wishlist_06.png" alt="">
+								</div>
+								<div class="Wishlist320__product--info">
+									<p>detailed swing dress</p>
+									<p>color: blue</p>
+									<p>size: 12</p>
+									<p class="product-info-BigSpace">$275.00</p>
+									<p>1</p>
+									<a href="#">Edit item</a>
+								</div>
+							</div>
+							<div class="Wishlist320__product__right">
+								<button>
+									<a href="cart.html">add to bag</a>
+								</button>
+							</div>
+						</div>
+					</div>
+						
+				</div>
+			</div>
+			
+			<div class="brands">
+				<div class="brands__number">
+					<div class="NumberItem">
+						<div>
+							<h2>01.</h2>
+						</div>
+						<div>
+							<h3>free shipping</h3>
+							<p>on all orders over $50</p>
+						</div>
+					</div>
+					<div class="NumberItem">
+						<div>
+							<h2>02.</h2>
+						</div>
+						<div>
+							<h3>money back guarantee</h3>
+							<p>on all orders</p>
+						</div>
+					</div>
+					<div class="NumberItem">
+						<div>
+							<h2>03.</h2>
+						</div>
+						<div>
+							<h3>worldwide delivery</h3>
+							<p>to over 80 countries</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<footer>
+		<div class="main960">
+			<div class="wrap">
+				<div class="action">
+					<ul>
+						<li><a href="#">About G-Star Raw </a></li>
+						<li><a href="#">G-Star Retailers</a></li>
+						<li><a href="#">FAQ Contact </a></li>
+						<li><a href="#">Privacy Policy </a></li>
+						<li><a href="#" class="except">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				<div class="newsletter">
+					<div>
+						<form action="" class="newsletter__search">
+							<div><p>newsletter</p></div>
+							<div>
+								<input type="text" name="">
+							</div>
+						</form>
+					</div>
+					<div class="newsletter__link">
+						<div class="linkHidden320">
+							<img src="images/twinter.png">
+						</div>
+						<div class="linkHidden320">
+							<img src="images/p.png">
+						</div>
+						<div class="linkHidden320">
+							<img src="images/fb.png">
+						</div>
+						<div class="linkHidden320">
+							<img src="images/youtube.png">
+						</div>
+						<div class="linkHidden320">
+							<img src="images/kb.png">
+						</div>
+						<div class="linkHidden320">
+							<img src="images/g+.png">
+						</div>
+
+						<div class="linkHidden720">
+							<ul>
+								<li><a href="#"><img src="images/twinter.png"></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="images/p.png"></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="images/fb.png"></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="images/youtube.png"></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="images/kb.png"></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="images/g+.png"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="method">
+					<ul  class="method_320">
+						<li>
+							<a href="#"><img src="images/paypal.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/visa.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/masterCard.png"></a>
+						</li>
+					</ul>
+					<p class="method_320">2016 the shop. All Rights Reserved.</p>
+
+					<div class="method_760">
+						<p>2016 the shop. All Rights Reserved.</p>
+					</div>
+					<div  class="method_760">
+						<ul>
+							<li>
+								<a href="#"><img src="images/paypal.png"></a>
+							</li>
+							<li>
+								<a href="#"><img src="images/visa.png"></a>
+							</li>
+							<li>
+								<a href="#"><img src="images/masterCard.png"></a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="footerDES">
+		<div class="main960">
+			<div class="footerDES__header">
+				<div class="leftfooter">
+					<div class="leftfooter__header">
+						<div>
+							<h2>shopping guide</h2>
+							<ul>
+								<li><a href="#">about g-start raw</a></li>
+								<li><a href="#">corporate responsibility</a></li>
+								<li><a href="#">press room</a></li>
+								<li><a href="#">careers</a></li>
+								<li><a href="#">g-start retailers</a></li>
+								<li><a href="#">open a g-start store</a></li>
+							</ul>
+						</div>
+						<div>
+							<h2>help info</h2>
+							<ul>
+								<li><a href="#">faq</a></li>
+								<li><a href="#">contact</a></li>
+								<li><a href="#">frivacy policy</a></li>
+								<li><a href="#">terms & conditions</a></li>
+								<li><a href="#">disclaimer</a></li>
+							</ul>
+						</div>
+						<div>
+							<h2>twitter</h2>
+							<p class="twitterp">
+								check out the new upcoming phone !! #Valentine's Day #Australia
+								<a href="#">http://t.co/wRye6rBElN</a>
+								<span>- 7 hours ago</span>
+							</p>
+							<p>
+								your solution partner:
+								<a href="#">http://t.co/StOrIs63bd</a>
+								<p>#magento #IT #websitedevlopment - </p><span>8 hours ago</span>
+							</p>
+						</div>
+					</div>
+					<div class="leftfooter__footer">
+						<div class="leftfooter__footer__about">
+							<h2>about us</h2>
+							<p>
+								One could refuse to pay expensive translators, the European languages are members of the same family. Their separate existence is a myth. Uses  <a href="#"> read more</a>
+							</p>
+						</div>
+						<div class="leftfooter__footer__location">
+							<div>
+								<img src="images/google_map_05.png">
+							</div>
+							<div>
+								<h2>store location</h2>
+								<p>Company ltd.co 234 Fake address name, Fake city name, Country 01234 (000) 123 456 xxx</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rightfooter">
+					<h2>facebook</h2>
+					<img src="images/FaceBookCmt.png">
+				</div>
+			</div>
+			<hr>
+			<div class="footerDES__content">
+				<div>
+					<form action="" class="footerDES__content__search">
+						<div>
+							<span>newsletter</span>
+						</div>
+						<div>
+							<input type="text" name="">
+						</div>
+					</form>
+				</div>
+				<div class="footerDES__content__LinkDes">
+					<span>connect us</span>
+					<ul>
+						<li><a href="#"><img src="images/twinter.png"></a></li>
+						<li><a href="#"><img src="images/p.png"></a></li>
+						<li><a href="#"><img src="images/fb.png"></a></li>
+						<li><a href="#"><img src="images/youtube.png"></a></li>
+						<li><a href="#"><img src="images/kb.png"></a></li>
+						<li><a href="#"><img src="images/g+.png"></a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="footerDES__footer">
+				<div class="footerDES__footer__Copyright">
+					<p>2016 the shop. All Rights Reserved.</p>
+				</div>
+				<div  class="footerDES__footer__CopyrightLink">
+					<ul>
+						<li>
+							<a href="#"><img src="images/paypal.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/visa.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/masterCard.png"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

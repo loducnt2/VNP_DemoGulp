@@ -1,0 +1,544 @@
+/* -------       product_DES      -------- */
+.PageProduct320{
+	display: none;
+}
+.PageProduct760{
+	display: none;
+}
+.PageProduct{
+	padding-bottom: 85px;
+	&__breadcrumb{
+		display: flex;
+		justify-content: space-between;
+		margin: 10px 0 20px 0;
+		&__left{
+			& ol li{
+				display: inline-block;
+				padding: 0 5px;
+			}
+			& ol li a{
+				color: #aaa;
+				font-size: 1.3rem;
+				font-family: arial;
+			}
+			& ol li::after{
+				content: "/";
+				padding-left: 10px;
+			}
+			& ol li:last-child::after{
+				content: "";
+			}
+		}
+		&__right{
+			& a{
+				color: #aaa;
+				font-size: 1.3rem;
+				font-family: arial;
+			}
+			& a::before{
+				content: "<";
+				padding-right: 10px;
+			}
+		}
+	}
+	&__contents{
+		.PageProductDetail{
+			display: flex;
+			& > div{
+				flex: 1;
+			}
+			& > div:nth-of-type(2){
+				flex: 4;		
+			}
+			& > div:nth-of-type(3){
+				flex: 3;		
+			}
+			
+			&__images{
+				padding-right: 25px;
+				ul{
+					padding-left: 5px;
+
+				}
+				ul li{
+					padding-bottom: 10px;
+					margin-bottom: 10px;
+				}
+				.product-active{
+					border: 1px solid red;
+				}
+				ul li:first-child{
+					padding-bottom: 0px;
+				}
+				ul li a{
+					text-align: center;
+				}
+				i{
+					font-size: 3em;
+					color: #aaa;
+					padding-left: 30px;
+				}
+				
+				/* ul li:hover{
+					border: 1px solid red;
+				} */
+			}
+			&__BigImage{
+				padding-right: 25px;
+			}
+			&__information{
+				margin-bottom: 15px;
+				.ProductPaginate{
+					display: flex;
+					justify-content: flex-end;
+					font-size: 13px;
+					font-weight: bold;
+					span::before{
+						content: "<";
+						padding-right: 10px;
+					}
+					span::after{
+						content: ">";
+						padding-left: 10px;
+					}
+				}
+				.PageProduct-titleProduct{
+					font-size: 15px;
+					color: #aaa;
+					font-family: arial;
+					text-transform: uppercase;
+					font-family: arial;
+				}
+				.PageProduct-nameProduct{
+					font-size: 24px;
+					font-family: 'Playfair Display', serif;
+					text-transform: uppercase;
+					padding-bottom: 20px;
+
+				}
+				.PageProduct-rate{
+					margin-bottom: 20px;
+					display: flex;
+					& > div{
+						flex: 1;
+					}
+					/* .checked {
+					  color: orange;
+					} */
+					span{
+						font-size: 14px;
+						padding: 0 3px;
+						a{
+							color: black;
+						}
+					}
+					& > div:nth-of-type(2){
+						flex: 1.4;
+					}
+				}
+
+				
+				.PageProduct-InfoProduct{
+					font-size: 14px;
+					span{
+						color: #aaa;
+					}
+					strong{
+						color: #aea012;
+					}
+					p{
+						color: #aaa;
+						padding-top: 10px;
+					}
+				}
+
+				.PageProduct-priceProduct{
+					padding-top: 20px;
+					padding-bottom: 20px;
+					font-size: 18px;
+					text-transform: uppercase;
+					display: block;
+					font-family: 'Nunito', sans-serif;
+					font-weight: bold;
+				}
+				.SizePageProduct{
+					&__title{
+						display: flex;
+						align-items: center;
+						& > div{
+							flex: 1;
+						}
+						& > div:nth-of-type(2){
+							display: flex;
+							justify-content: flex-end;	
+							a{
+								color: #847878;
+								font-size: 2rem;
+								font-family: 'Nunito', sans-serif;
+							}		
+
+						}
+					}
+					text-transform: uppercase;
+					font-family: 'Nunito', sans-serif;
+					font-weight: bold;
+					h1{
+						font-size: 1.4rem;
+					}
+					margin-bottom: 5px;
+					border: 1px solid #aaa;
+					padding: 5px 15px 5px 15px;
+					border-radius: 10px;
+
+					&__ListSize{
+						padding-top: 15px;
+						margin-left: 5px;
+						display: flex;
+						& > div{
+							flex: 1;
+						}
+						input{
+							margin-right: 8px;
+						}
+					}
+					#ulPageProductSizeDES{
+						display: none;
+					}
+
+				}
+				.ColorPageProduct{
+					&__title{
+						display: flex;
+						align-items: center;
+						& > div{
+							flex: 1;
+						}
+						& > div:nth-of-type(2){
+							display: flex;
+							justify-content: flex-end;	
+							a{
+								color: #847878;
+								font-size: 2rem;
+								font-family: 'Nunito', sans-serif;
+							}				
+						}
+					}
+					text-transform: uppercase;
+					font-family: 'Nunito', sans-serif;
+					font-weight: bold;
+					h1{
+						font-size: 1.4rem;
+					}
+					margin-bottom: 5px;
+					border: 1px solid #aaa;
+					padding: 5px 15px 5px 15px;
+					border-radius: 10px;
+					&__ListColor{
+						padding-top: 15px;
+						margin-left: 5px;
+						display: flex;
+						& > div{
+							flex: 1;
+						}
+						input{
+							margin-right: 3px;
+						}
+						a{
+							color: black;
+						}
+						a:hover{
+							text-decoration: underline;
+						}
+					}
+					#ulPageProductColorDES{
+						display: none;
+					}
+				}
+				.QtyPageProduct{
+					width: 25%;
+					&__title{
+						display: flex;
+						align-items: center;
+						& > div{
+							flex: 1;
+						}
+						& > div:nth-of-type(2){
+							display: flex;
+							justify-content: flex-end;	
+							a{
+								color: #847878;
+								font-size: 2rem;
+								font-family: 'Nunito', sans-serif;
+							}				
+						}
+					}
+					text-transform: uppercase;
+					font-family: 'Nunito', sans-serif;
+					font-weight: bold;
+					h1{
+						font-size: 1.4rem;
+					}
+					margin-bottom: 25px;
+					border: 1px solid #aaa;
+					padding: 5px 15px 5px 15px;
+					border-radius: 10px;
+				}
+				.ButtonPageProduct{
+					display: flex;
+					text-align: center;
+					font-size: 14px;
+					font-weight: bold;
+					margin-bottom: 25px;
+					& > div{
+						flex: 1;
+					}
+					a{
+						text-align: center;
+						text-transform: uppercase;
+					}
+					&__cart{
+						background-color: black;
+						padding: 10px 0;
+						border: 1px solid #aaa;
+						margin-right: 7px;
+						a{
+							color: white;
+						}
+					}
+					&__wishlist{
+						background-color: white;
+						padding: 10px 0;
+						border: 1px solid #aaa;
+						margin-left: 7px;
+						a{
+							color: black;
+							padding-left: 5px;
+						}
+					}
+				}
+				.PageProduct-description{
+					padding: 15px 0;
+					border-top: 1px solid #aaa;
+					&__title{
+						display: flex;
+						align-items: center;
+						padding-bottom: 25px;
+						& > div{
+							flex: 1;
+						}
+						& > div:nth-of-type(2){
+							display: flex;
+							justify-content: flex-end;	
+							a{
+								color: #847878;
+								font-size: 2rem;
+								font-family: 'Nunito', sans-serif;
+							}				
+						}
+						h2{
+							font-size: 18px;
+							font-family: 'Playfair Display', serif;
+							text-transform: uppercase;
+						}
+					}
+
+					p{
+						font-size: 15px;
+						color: #aaa;
+					}
+					#ulPageProductDescriptionDES{
+						display: none;
+					}
+				}
+				.PageProduct-moreInfor{
+					padding: 15px 0;
+					border-top: 1px solid #aaa;
+					&__title{
+						display: flex;
+						align-items: center;
+						& > div{
+							flex: 1;
+						}
+						& > div:nth-of-type(2){
+							display: flex;
+							justify-content: flex-end;	
+							a{
+								color: #847878;
+								font-size: 2rem;
+								font-family: 'Nunito', sans-serif;
+							}				
+						}
+						h2{
+							font-size: 18px;
+							font-family: 'Playfair Display', serif;
+							text-transform: uppercase;
+						}
+					}
+				}
+				.PageProduct-tags{
+					padding: 15px 0;
+					border-top: 1px solid #aaa;
+					&__title{
+						display: flex;
+						align-items: center;
+						& > div{
+							flex: 1;
+						}
+						& > div:nth-of-type(2){
+							display: flex;
+							justify-content: flex-end;	
+							a{
+								color: #847878;
+								font-size: 2rem;
+								font-family: 'Nunito', sans-serif;
+							}				
+						}
+						h2{
+							font-size: 18px;
+							font-family: 'Playfair Display', serif;
+							text-transform: uppercase;
+						}
+					}
+				}
+				.PageProduct-share{
+					padding: 15px 0;
+					border-top: 1px solid #aaa;
+					h2{
+						font-size: 18px;
+						padding-right: 20px;
+						font-family: 'Playfair Display', serif;
+						text-transform: uppercase;
+					}
+					display: flex;
+					ul li{
+						display: inline-block;
+						padding: 0 3px;
+					}
+				}
+			}
+		}
+
+		.PageProductRegard{
+			display: flex;
+			& > div{
+				flex: 1;
+			}
+			& > div:nth-of-type(2){
+				flex: 0.55;
+			}
+			.PageProductRegard-relative{
+			    padding-right: 18px;
+			    &__title{
+			    	display: flex;
+					align-items: center;
+					margin-bottom: 45px;
+			    	& >div{
+			    		flex: 1;
+			    		padding: 0 5px;
+			    		
+			    	}
+			    	& > div:nth-of-type(3){
+						flex: 0.2;
+					}
+			    	h1{
+			    		font-size: 22px;
+			    		text-transform: uppercase;
+			    		font-family: 'Playfair Display', serif;
+			    	}
+			    	&__icon{
+			    		display: flex;
+			    		& > div{
+			    			flex: 1;
+			    		}
+			    		i{
+			    			color: #aaa;
+			    			font-size: 3rem;
+			    		}
+			    		& > div:nth-of-type(2){
+							display: flex;
+							justify-content: flex-end;
+						}
+			    	}
+			    }
+			    &__relative{
+			    	display: flex;
+			    	flex-wrap: wrap;
+					& > div{
+						width: 23%;
+					}
+					.ProductRegard-item{
+						padding: 0 6px 70px 6px;
+						text-transform: uppercase;
+						text-align: center;
+						h2{
+							font-family: 'Playfair Display', serif;
+							font-size: 14px;
+							padding: 15px 0 5px 0;
+						}
+						p{
+							font-size: 12px;
+							font-family: 'Nunito', sans-serif;
+						}
+						a{
+							color: black;
+						}
+						a:hover{
+							color: #aaa;
+						}
+					}
+			    }
+			}
+			.PageProductRegard-review{
+				border:1px solid #aaa;
+				padding: 0 4px;
+				h1{
+		    		font-size: 22px;
+		    		text-transform: uppercase;
+		    		font-family: 'Playfair Display', serif;
+		    		text-align: center;
+		    		padding: 20px 0;
+		    	}
+		    	&__item{
+		    		margin-bottom: 5px;
+		    		background-color: #f7f7f7;
+		    		padding: 15px 10px;
+		    		h3{
+		    			font-size: 13px;
+		    			font-family: 'Nunito', sans-serif;
+		    			text-transform: uppercase;
+		    			padding-bottom: 15px;
+		    		}
+		    		p{
+		    			padding-bottom: 15px;
+		    			font-family: arial;
+		    			color: #aaa;
+		    			font-size: 15px;
+		    		}
+		    	}
+		    	&__time{
+		    		display: flex;
+		    		justify-content: space-between;
+		    		font-family: arial;
+	    			color: #aaa;
+	    			font-size: 15px;
+		    	}
+		    	&__buttom{
+		    		margin-top: 10px;
+		    		margin-bottom: 15px;
+		    		width: 40%;
+		    		float: right;
+		    		background-color: black;
+		    		padding: 10px;
+		    		a{
+		    			font-size: 13px;
+		    			color: white;
+		    			text-transform: uppercase;
+		    			font-family: 'Nunito', sans-serif;
+		    			display: flex;
+		    			justify-content: center;
+		    		}
+		    	}
+			}
+		}
+	}
+}

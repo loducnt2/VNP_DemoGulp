@@ -1,0 +1,310 @@
+/* -------------     category-320     ------------- */
+@media screen and (min-width: 320px ) and (max-width: 759px ){
+	.PageCategory{
+		display: none;
+	}
+	.PageCategory320{
+		display: block;
+		padding: 0 5px;
+		.BreadcrumbCate320{
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+			& > div{
+				flex: 1;
+			}
+			& > div:nth-of-type(4), div:nth-of-type(5){
+				flex: 0.3;
+				display: flex;
+				justify-content: center;
+				a{
+					color: black;
+					border: 1px solid #aaa;
+					font-size: 2rem;
+					padding: 3px;
+				}
+			}
+			& > div:nth-of-type(2){
+				hr{
+					display: flex;
+					justify-content: center;
+				}
+			}
+			& > div:nth-of-type(3){
+				flex: 0.7;
+				display: flex;
+				justify-content: center;
+			}
+			& > div:nth-of-type(5){
+				a{
+					color: #aaa;
+				}
+			}
+			h1{
+				text-transform: uppercase;
+				font-family: 'Playfair Display', serif;
+				font-size: 24px;
+			}
+			span{
+				font-size: 12px;
+				font-family: arial;
+				color: #aaa;
+			}
+		}
+		.BannerCate320{
+			position: relative;
+			margin-bottom: 10px;
+			img{
+				width: 100%;
+			}
+			&__text{
+				height: 90px;
+				width: 50%;
+				text-transform: uppercase;
+				position: absolute;
+				top: 35%;
+				left: 5%;
+				h1{
+					font-size: 24px;
+					font-family: 'Playfair Display', serif;
+				}
+			}
+		}
+		.CollectionCate320{
+			text-transform: uppercase;
+			font-family: 'Nunito', sans-serif;
+			font-weight: bold;
+			margin-bottom: 20px;
+			.WomenCate320{
+				padding: 10px 15px 20px 15px;
+				border: 1px solid #aaa;
+				margin-bottom: 25px;
+				ul{
+					display: block;
+					padding-top: 25px;
+					padding-left: 10px;
+				}
+				ul li{
+					padding-bottom: 15px;
+				}
+				ul li:last-child{
+					padding-bottom: 0;
+				}
+				ul li a{
+					color: black;
+					font-size: 1.4rem;
+				}
+				ul li a:hover{
+					color: #aaa;
+				}
+				&__title{
+					display: flex;
+					align-items: center;
+					& > div{
+						flex: 1;
+					}
+					& > div:nth-of-type(2){
+						display: flex;
+						justify-content: flex-end;	
+						a{
+							color: #847878;
+							font-size: 2rem;
+							font-family: 'Nunito', sans-serif;
+						}				
+					}
+				}
+			}
+			h3{
+				font-size: 1.5rem;
+			}
+			.CategoryCate320-title{
+				display: flex;
+				align-items: center;
+				& > div{
+					flex: 1;
+				}
+				& > div:nth-of-type(2){
+					display: flex;
+					justify-content: flex-end;	
+					a{
+						color: #847878;
+						font-size: 2rem;
+						font-family: 'Nunito', sans-serif;
+					}				
+				}
+			}
+			
+			.Categorycate320{
+				padding: 10px 15px 10px 15px;
+				border: 1px solid #aaa;
+				margin-bottom: 25px;
+				border-radius: 10px;
+				background-color: #f7f7f7;
+				#ulCate320{
+					display: none;
+				}
+				ul{
+					display: block;
+					padding-top: 25px;
+					padding-left: 10px;
+				}
+				ul li{
+					padding-bottom: 15px;
+				}
+				ul li:last-child{
+					padding-bottom: 0;
+				}
+				ul li a{
+					color: black;
+					font-size: 1.3rem;
+				}
+				ul li a:hover{
+					color: #aaa;
+				}
+			}
+			.Size320{
+				padding: 10px 15px 10px 15px;
+				border: 1px solid #aaa;
+				margin-bottom: 25px;
+				border-radius: 10px;
+				background-color: #f7f7f7;
+
+				.ListSize320{
+					padding-top: 25px;
+					margin-left: 5px;
+					display: flex;
+					& > div{
+						flex: 1;
+					}
+					input{
+						margin-right: 8px;
+					}
+				}
+				#ListSize320Hidden{
+					display: none;
+				}
+			}
+			.Range320{
+				padding: 10px 15px 10px 15px;
+				border: 1px solid #aaa;
+				margin-bottom: 25px;
+				border-radius: 10px;
+				background-color: #f7f7f7;
+				#Range-numberHidden320{
+					display: none;
+				}
+				.Range-number320{
+					display: flex;
+					align-content: space-between;
+					& > div{
+						flex: 1;
+					}
+					input{
+						border: 1px solid #aaa;
+						width: 50%;
+						padding: 8px 0;
+					}
+					& > div:nth-of-type(2){
+						display: flex;
+						justify-content: flex-end;
+					}
+				}
+			}
+			.Color320{
+				padding: 10px 15px 10px 15px;
+				border: 1px solid #aaa;
+				margin-bottom: 25px;
+				border-radius: 10px;
+				background-color: #f7f7f7;
+				#Color-Hidden320{
+					display: none;
+				}
+				.ListColor320{
+					padding-top: 25px;
+					margin-left: 5px;
+					display: flex;
+					& > div{
+						flex: 1;
+					}
+					input{
+						margin-right: 3px;
+					}
+					a{
+						color: black;
+					}
+					a:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			.Brand320{
+				padding: 10px 15px 10px 15px;
+				border: 1px solid #aaa;
+				margin-bottom: 25px;
+				border-radius: 10px;
+				background-color: #f7f7f7;
+				#Brand-Hidden320{
+					display: none;
+				}
+				.ListBrands320{
+					padding-top: 25px;
+					margin-left: 5px;
+					display: flex;
+					& > div{
+						flex: 1;
+					}
+					input{
+						margin-right: 8px;
+					}
+					a{
+						color: black;
+					}
+					a:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		.Title320{
+			margin-bottom: 30px;
+			span{
+				color: #aaa;
+				font-size: 16px;
+				display: block;
+				text-align: center;
+			}
+		}
+		.ProductsCate320{
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 30px;
+			& > div{
+				width: 45%;
+			}
+			&__item{
+				padding: 0 8px 30px 8px;
+				text-transform: uppercase;
+				text-align: center;
+				img{
+					width: 100%;
+				}
+				h2{
+					font-family: 'Playfair Display', serif;
+					font-size: 14px;
+					padding: 15px 0 5px 0;
+				}
+				span{
+					font-size: 12px;
+					font-family: 'Nunito', sans-serif;
+				}
+				a{
+					color: black;
+				}
+				a:hover{
+					color: #aaa;
+				}
+			}
+		}
+	}
+		
+}

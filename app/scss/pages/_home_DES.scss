@@ -1,0 +1,294 @@
+
+.banner{
+	width: 100%;
+	&__item{
+		position: relative;
+		& img{
+			width: 100%;
+		}
+		& .bannerWrap{
+			position: relative;
+			& .bannerWrap__text760{
+				width: 555px;
+				height: 150px;
+				position: absolute;
+				right: 0;
+				top: -260px;
+				text-transform: uppercase;
+				text-align: center;
+				color: black;
+				& p{
+					font-size: 1.6rem;
+					font-family: 'Nunito', sans-serif;
+				}
+				& h1{
+					font-size: 5rem;
+					font-family: 'Playfair Display', serif;
+				    margin: 10px 0 24px 0;
+				}
+				& a{
+					padding: 10px 15px;
+					background: black;
+					color: white;
+					font-size: 1.4rem;
+					font-family: 'Nunito', sans-serif;
+				}
+
+			}
+			& .bannerWrap__text320{
+				display: none;
+			}
+		}
+	}
+
+	&__text{
+		display: none;
+	}
+}
+
+.title{
+	display: flex;
+	align-items: center;
+	margin: 30px 0;
+	& div{
+		flex: 1;
+	}
+	& div:nth-of-type(1), div:nth-of-type(3){
+		flex: 2;
+	}
+	& h1{
+		text-align: center;
+		font-size: 2.4rem;
+		font-family: 'Playfair Display', serif;
+		color: black;
+		text-transform: uppercase;
+	}
+	& hr{
+		border: 0.5px solid #aaa;
+	}
+}
+
+.news320{
+	display: flex;
+	text-transform: uppercase;
+	color: black;
+	text-align: center;
+	margin-bottom: 50px;
+	& div{
+		flex: 1;
+	}
+	& h2{
+		font-size: 1.8rem;
+		font-family: 'Playfair Display', serif;
+		padding: 18px 0 10px 0;
+	}
+	& p{
+		font-size: 1rem;
+		font-family: 'Nunito', sans-serif;
+	}
+	a{
+		color: black;
+	}
+	a:hover{
+		color: #aaa;
+	}
+}
+
+.RelatedProducts{
+	display: flex;
+	margin-bottom: 20px;
+	& div{
+		flex: 1;
+	}
+	& div:nth-of-type(1){
+		flex: 2;
+	}
+
+	.MostPopular{
+		&__text{
+			display: flex;
+			align-items: center;
+			margin-bottom: 45px;
+			& div{
+				flex: 1;
+				display: flex;
+				align-items: center;
+			}
+			& h1{
+				font-size: 2.4rem;
+				font-family: 'Playfair Display', serif;
+				color: black;
+				text-transform: uppercase;
+				padding-right: 25px;
+			}
+			& hr{
+				width: 65%;
+				border: 0.5px solid #aaa;
+			}
+			&--hidden{
+				display: none;
+			}
+
+			& .MostPopulartext320{
+				display: none;
+			}
+		}
+
+		.products{
+			display: flex;
+			color: black;
+			text-align: center;
+			text-transform: uppercase;
+			& div{
+				flex: 1;
+			}
+
+			&__pro1{
+				& h2{
+					font-size: 1.4rem;
+					font-family: 'Playfair Display', serif;
+					padding: 15px 0 10px 0;
+				}
+				& p{
+					font-size: 1.1rem;
+					font-family: 'Nunito', sans-serif;
+				}
+				a{
+					color: black;
+				}
+				a:hover{
+					color: #aaa;
+				}
+			}
+		}
+	}
+	.blog{
+		margin-left: 5px;
+		padding-bottom: 20px;
+		border: 1px solid #aaa;
+		&__text{
+			color: black;
+			text-transform: uppercase;
+			font-size: 2.4rem;
+			text-align: center;
+			padding: 15px 0;
+			font-family: 'Playfair Display', serif;
+		}
+		&__products{
+			width: 80%;
+			margin: auto;
+			& .blog1{
+				position: relative;
+				padding-bottom: 45px;
+				&__text{
+					background: white;
+					width: 140px;
+					height: 130px;
+					position: absolute;
+					bottom: 0;
+					left: 30%;
+					padding-left: 10px;
+					padding-top: 15px;
+					text-transform: uppercase;
+					& h3{
+						font-size: 1.4rem;
+						color: #282828;
+						font-family: 'Playfair Display', serif;
+					}
+					& p{
+						color: #aaa;
+						font-size: 1rem;
+						padding: 15px 0 30px 0;
+						font-family: 'Nunito', sans-serif;
+					}
+					& a{
+						font-size: 1.4rem;
+						color: black;
+						float: right;
+						font-family: 'Playfair Display', serif;
+					}
+				}
+			}
+		}
+	}
+}
+
+.brands{
+	&__text{
+		display: flex;
+		align-items: center;
+		& div{
+			flex: 1;
+		}
+		& div:nth-of-type(1), div:nth-of-type(3){
+			flex: 2;
+		}
+		& h1{
+			font-family: 'Playfair Display', serif;
+			text-align: center;
+			text-transform: uppercase;
+			color: black;
+			font-size: 2.4rem;
+		}
+		& hr{
+			border: 0.5px solid #aaa;
+		}
+	}
+
+	& .hidden320{
+		display: none;
+	}
+	& .BrandHidden760{
+		display: none;
+	}
+	& .BrandHiddenDES{
+		padding: 30px 0;
+		& ul li{
+			display: inline-block;
+			padding: 0 17px;
+		}
+	}
+
+	&__number{
+		border-top: 1px solid #aaa;
+		padding: 40px 0;
+		display: flex;
+		align-items: center;
+		color: black;
+		text-transform: uppercase;
+		& div{
+			flex: 1;
+		}
+		& h2{
+			font-size: 3.2rem;
+			line-height: 0.5;
+			font-family: 'Playfair Display', serif;
+			padding-right: 10px;
+		}
+		& h3{
+			font-size: 1.3rem;
+			font-family: 'Playfair Display', serif;
+		}
+		& p{
+			font-size: 1.1rem;
+			font-family: 'Nunito', sans-serif;
+		}
+		& .NumberItem{
+			display: flex;
+			& div{
+				flex: 1;
+
+			}
+			& div:nth-of-type(1){
+				display: flex;
+				justify-content: flex-end;
+			}
+			& div:nth-of-type(2){
+				flex: 1.5;
+			}
+		}
+	}
+}
+
+
+

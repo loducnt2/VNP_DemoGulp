@@ -1,0 +1,41 @@
+
+/* -------   BlogPost-760      ----------- */
+@media screen and (min-width: 760px ) and (max-width: 1559px ){
+	.contentBlog{
+		padding: 0 10px;
+		& .newsBlog{
+			&__left{
+				& .newsBlogpostGallery{
+					padding: 25px 10px 50px 10px;
+					& img{
+						max-width: 100%;
+						object-fit: cover;
+					}
+				}
+				&__categoryBlogpost{
+					border: 1px solid #aaa;
+					text-transform: uppercase;
+					& h3{
+						color: black;
+						font-size: 1.8rem;
+						padding-left: 23px;
+						font-family: 'Nunito', sans-serif;
+					}
+					display: flex;
+					justify-content: space-between;
+					height: 50px;
+					align-items: center;
+					border-bottom: 1px solid #aaa;
+					& div:nth-of-type(2){
+						display: flex;
+						justify-content: flex-end;
+						padding-right: 10px;
+					}
+				}
+			}
+			&__right{
+				display: none;
+			}
+		}
+	}
+}

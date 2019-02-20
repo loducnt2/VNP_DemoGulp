@@ -1,0 +1,109 @@
+/* -------------     cart-320     ------------- */
+@media screen and (min-width: 320px ) and (max-width: 759px ){
+	.PageCart{
+		&__breadcrumb{
+			display: none;
+		}
+		&__products{
+			& h1{
+				text-align: left;
+				padding-left: 15px;
+			}
+			&__items{
+				&__title{
+					display: none;
+				}
+				&__detail{
+					display: none;
+				}
+				&__detail320{
+					display: block;
+					padding: 15px;
+					background: #f7f7f7;
+					margin-bottom: 10px;
+					.PageCart-detail320-Delete{
+						a{
+							color: black;
+							font-size: 2rem;
+							display: flex;
+							justify-content: flex-end;
+						}
+					}
+					.PageCart-detail320-infor{
+						display: flex;
+						span, p{
+							text-transform: uppercase;
+							font-size: 1.3rem;
+							font-weight: bold;
+							font-family: 'Nunito', sans-serif;
+						}
+						a{
+							color: black;
+							text-decoration: underline;
+							font-size: 1.3rem;
+						}
+						& > div{
+							flex: 1;
+							padding-bottom: 10px;
+						}
+						& > div:nth-of-type(2){
+							flex: 3;
+						}
+						&__Number{
+							display: flex;
+
+							& > div{
+								flex: 1;
+								display: flex;
+								align-items: center;
+							}
+							input{
+								width: 50%;
+								height: 30px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&__infor{
+			flex-direction: column;
+			.PageCart-BacktoShop{
+				display: none;
+			}
+			.PageCart-Voucher{
+				.PageCart-small-hidden329, .PageCart-span-hidden320{
+					display: none !important;
+				}
+			}
+			.PageCart-buttonDES{
+				display: none !important;
+			}
+			.PageCart-button320{
+				display: flex !important;
+				& > div{
+					flex: 1;
+					margin: 0 5px;
+				}
+				& > div:nth-of-type(1){
+					background-color: white;
+					border: 1px solid #aaa;
+					font-weight: bold;
+					justify-content: center;
+					display: flex;
+						align-items: center;	
+					a{
+
+						color: black;
+					}
+				}
+				& > div:nth-of-type(2) button{
+					background-color: black;
+					color: white;
+					font-weight: bold;
+				}
+
+			}
+		}
+	}
+}

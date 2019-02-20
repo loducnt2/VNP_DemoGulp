@@ -1,0 +1,244 @@
+
+@media screen and (min-width: 320px ) and (max-width: 759px ){
+
+	.news320{
+		flex-direction: column;
+	}
+	.RelatedProducts{
+		flex-direction: column;
+	}
+	.products{
+		flex-direction: column;
+	}
+	.banner__item .bannerWrap .bannerWrap__text760{
+		display: none;
+	}
+
+	.banner{
+		height: 205px;
+		background: white;
+		position: relative;
+
+		&__item{
+			padding: 0 5px;
+		}
+		&__item img{
+			width: 100%;
+			height: 205px;
+			object-fit: cover;
+		}
+		& .bannerWrap{
+			&__text320{
+				display: block !important;
+				width: 45%;
+				height: auto;
+				position: absolute;
+				right: 20px;
+				/* top: 60px; */
+				bottom: 50px;
+				text-transform: uppercase;
+
+				& h1{
+					color: black;
+					font-family: 'Playfair Display', serif;
+					padding-bottom: 45px;
+				}
+				& a{
+					color: white;
+					padding: 10px 40px;
+					background: black;
+					position: absolute;
+					bottom: 0;
+				}
+			}
+			&__text760{
+				display: none;
+			}
+		}
+	}
+	.wrap{
+		margin: 0 5px;
+	}
+
+	.title{
+		& div:nth-of-type(1), div:nth-of-type(3){
+			flex: 0.4;
+		}
+	}
+
+	.anh{
+		display: flex;
+		margin: 0 0 10px 35px;
+		height: 110px;
+		/* background: green; */
+		text-transform: uppercase;
+		
+		& div{
+			flex: 1;
+		}
+		& div:nth-of-type(2){
+			flex: 1.7;
+		}
+		
+		& img{
+			width: 100px;
+			height: 100%;
+			float: right;
+		}
+		
+		& h2{
+			margin-left: 15px;
+			font-family: 'Playfair Display', serif;
+			font-size: 21px;
+		}
+		& p{
+			margin-left: 15px;
+			font-size: 10px;
+			font-family: 'Nunito', sans-serif;
+		}
+	}
+	.RelatedProducts{
+		margin-bottom: 35px;
+	}
+	.blog1hidden760{
+		display: none;
+	}
+	.RelatedProducts .blog{
+		padding-bottom: 0;
+		margin-left: 0;
+	}
+	.products{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 30px;
+		&__pro1{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+
+			& h2{
+				font-size: 14px;
+				font-family: 'Playfair Display', serif;
+				text-transform: uppercase;
+				margin: 0;
+			}
+			& p{
+				font-family: 'Nunito', sans-serif;
+				font-size: 11px;
+			}
+		}
+		& .pro1block320{
+			display: none;
+		}
+	}
+
+	.brands{
+		&__text{
+
+			& div:nth-of-type(1), div:nth-of-type(3){
+				flex: 0.4;
+			}
+		}
+
+		& .BrandHiddenDES{
+			display: none;
+		}
+		& .hidden320{
+			display: flex;
+
+		}
+
+		&__brand{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 20px 5px;
+			border-bottom: 1px solid #aaa;
+
+			& div{
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			& .BrandHidden760{
+				display: none;
+			}
+		}
+
+		&__number{
+			display: flex;
+			& div{
+				flex: 1;
+				margin: 0 5px;
+				
+			}
+			& .NumberItem{
+				flex-direction: column;
+				& div:nth-of-type(1){
+					justify-content: flex-start;
+				}
+			}
+			& h2{
+				text-transform: uppercase;
+			}
+			& h3{
+				text-transform: uppercase;
+				margin: 10px 0;
+			}
+			& p{
+				text-transform: uppercase;
+			}
+		}
+	}
+	.RelatedProducts{
+		.MostPopular{
+			&__text{
+				& .MostPopularblock320{
+					display: block;
+				}
+				& h1{
+					padding-right: 0;
+					padding: 0 10px;
+				}
+				& hr{
+					width: 17%;
+				}
+
+				& .MostPopulartextDES{
+					display: none;
+				}
+				& .MostPopulartext320{
+					display: block;
+					display: flex;
+					align-items: center;
+					margin: 30px 0;
+					& div{
+						flex: 1;
+					}
+					& div:nth-of-type(1), div:nth-of-type(3){
+						flex: 0.3;
+					}
+					& div:nth-of-type(2){
+						display: flex;
+						justify-content: center;
+					}
+					& h1{
+						text-align: center;
+						font-size: 2.3rem;
+						font-family: 'Playfair Display', serif;
+						color: black;
+						text-transform: uppercase;
+					}
+					& hr{
+						width: 100%;
+					}
+				}
+			}
+
+		}
+	}
+	
+	
+}
